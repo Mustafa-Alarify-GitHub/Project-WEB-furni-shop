@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .custom-dialog {
+    @apply w-2/3 flex-col hidden bg-[#ffffff] rounded-lg overflow-hidden shadow-lg transition-all absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2;
+  }
+}
+
+@layer utilities {
+  .custom-input {
+    @apply w-full border border-primaryDialog rounded-md p-1 m-2 text-[#7361df];
+  }
+}
