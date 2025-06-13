@@ -16,15 +16,41 @@
     <div
         class="w-full h-screen bg-[url('../../images/modern-living-room-interior-2021-09-02-08-41-17-utc@2x.png')] bg-cover tablet:bg-center">
         <!-- Header -->
-        <header class="w-full flex justify-between py-[20px] laptop:py-[40px] laptop:px-[100px] px-[20px]">
+        <!-- Header -->
+        <header
+            class="w-full flex justify-between py-[20px] laptop:py-[40px] laptop:px-[100px] px-[20px] relative z-50">
             <h1 class="text-4xl font-bold text-white">FurniShop</h1>
+
+            <!-- Navigation desktop -->
             <nav class="hidden tablet:flex gap-[64px]">
                 <a href="#" class="text-white transition-all duration-200 text-[16px] hover:text-gray-300">Home</a>
                 <a href="#" class="text-white transition-all duration-200 text-[16px] hover:text-gray-300">About</a>
                 <a href="#" class="text-white transition-all duration-200 text-[16px] hover:text-gray-300">Features</a>
                 <a href="#" class="text-white transition-all duration-200 text-[16px] hover:text-gray-300">Contact</a>
             </nav>
+
+            <!-- Mobile Menu Button -->
+            <button id="menu-btn" class="block tablet:hidden z-50">
+                <img src="../../images/icons/align-right.png" alt="menu">
+            </button>
         </header>
+
+        <!-- Mobile Menu Overlay -->
+        <!-- Mobile Menu Overlay -->
+        <div id="mobile-menu"
+            class="fixed top-0 right-0 h-full w-[250px] bg-black text-white p-6 transform translate-x-full transition-transform duration-300 ease-in-out tablet:hidden z-50">
+            <button id="close-menu" class="mb-6">
+               X
+            </button>
+            <nav class="flex flex-col gap-6">
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Features</a>
+                <a href="#">Contact</a>
+            </nav>
+        </div>
+
+
         <!-- Content -->
         <div class="w-full flex h-2/3  flex-col gap-3 justify-center items-center">
             <h1 class="text-[24px] tablet:text-[64px] text-white font-semibold text-center leading-tight">
@@ -48,7 +74,7 @@
     <!-- Grid -->
     <div class="w-full bg-gradient-to-t from-white to-[#22211e]">
         <div
-            class="w-[90%] mx-auto tablet:h-[180px] h-[273px] grid grid-cols-2 tablet:grid-cols-4 rounded-[20px] tablet:-mt-[50px] bg-[#286f6c]">
+            class="w-[90%] mx-auto tablet:h-[180px] h-[273px] grid grid-cols-2 tablet:grid-cols-4 rounded-[20px] -mt-[50px] tablet:-mt-[50px] bg-[#286f6c]">
             <div class="flex h-min my-auto flex-col justify-center items-center text-white text-center border-r">
                 <h4 class="text-[24px] tablet:text-[40px] font-semibold">7</h4>
                 <p class="text-[14px] tablet:text-[20px]">Year <br> Experience</p>
@@ -217,8 +243,8 @@
                 people .”</p>
 
             <div class="flex gap-5">
-                <button class="rotate-180 w-[50px] h-[50px] flex justify-center items-center"><img
-                        src="../../images/icons/arrow-right.png" alt=""></button>
+                <button class="  w-[50px] h-[50px] flex justify-center items-center"><img
+                        src="../../images/icons/arrow-right copy.png" alt=""></button>
                 <button
                     class="rounded-full bg-[#286f6c] w-[50px] hover:scale-105 transition-all duration-200 h-[50px] flex justify-center items-center"><img
                         src="../../images/icons/arrow-right (2).png" alt="arrow"></button>
@@ -227,7 +253,136 @@
         </div>
     </div>
 
+    <!-- content -->
+    <div
+        class="w-full p-10 tablet:p-20 flex justify-between items-center bg-cover bg-center h-[300px] bg-[url('../../images/Rectangle%20928.png')]">
+        <div class="w-full tablet:w-1/2 hidden tablet:block"></div>
+        <div class="w-full tablet:w-1/2 text-white p-6">
+            <p class="tablet:text-[40px] text-[24px] font-semibold text-center tablet:text-start">Get more discount<br
+                    class="hidden tablet:block">Off
+                your order</p>
+            <p class="mb-4 tablet:text-[20px] text-[14px] text-center tablet:text-start">Join our mailing list</p>
+            <div class="flex gap-2 flex-1">
+                <input type="text" class="p-2 rounded w-2/3 text-black bg-white" placeholder="Your email address">
+                <button
+                    class="bg-black text-white px-4 py-2 rounded border-2 border-black transition-all duration-200 hover:border-white hover:bg-transparent text-nowrap">Shop
+                    Now</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <div class="w-full p-10 tablet:p-20 bg-[#23262f]">
+        <div class="w-full flex flex-col tablet:flex-row justify-between gap-5 tablet:border-b border-white pb-10 ">
+            <h5 class="text-2xl font-bold text-white">FurniShop</h5>
+            <div class="flex gap-4"> <a href="#"
+                    class="bg-[#2a2b3f] w-12 h-12 fl rounded-full flex justify-center items-center"><img
+                        src="../../images//social/Icon.png"></a>
+                <a href="#" class="bg-[#2a2b3f] w-12 h-12 flex rounded-full justify-center items-center"><img
+                        src="../../images//social/Icon-1.png"></a>
+                <a href="#" class="bg-[#2a2b3f] w-12 h-12 flex rounded-full justify-center items-center"><img
+                        src="../../images//social/Icon-2.png"></a>
+                <a href="#" class="bg-[#2a2b3f] w-12 h-12 flex rounded-full justify-center items-center"><img
+                        src="../../images//social/Icon-3.png"></a>
+                <a href="#" class="bg-[#2a2b3f] w-12 h-12 flex rounded-full justify-center items-center"><img
+                        src="../../images//social/Icon-4.png"></a>
+
+            </div>
+        </div>
+        <div class="w-full grid grid-cols-2 tablet:grid-cols-5 gap-4 mt-10">
+            <ul>
+                <li class="mb-4"><a href="#"
+                        class="text-white text-nowrap text-lg hover:underline hover:text-gray-300 transition-all duration-200">Our
+                        Products</a></li>
+                <li class="mb-4"><a href="#"
+                        class="text-white text-nowrap text-sm hover:underline hover:text-gray-300 transition-all duration-200">The
+                        Support Suite</a></li>
+                <li class="mb-4"><a href="#"
+                        class="text-white text-nowrap text-sm hover:underline hover:text-gray-300 transition-all duration-200">The
+                        Sales Suite</a></li>
+                <li class="mb-4"><a href="#"
+                        class="text-white text-nowrap text-sm hover:underline hover:text-gray-300 transition-all duration-200">Support</a>
+                </li>
+                <li class="mb-4"><a href="#"
+                        class="text-white text-nowrap text-sm hover:underline hover:text-gray-300 transition-all duration-200">Guide</a>
+                </li>
+            </ul>
+            <ul>
+                <li class="mb-4"><a href="#"
+                        class="text-white text-nowrap text-lg hover:underline hover:text-gray-300 transition-all duration-200">Top
+                        Features</a></li>
+                <li class="mb-4"><a href="#"
+                        class="text-white text-nowrap text-sm hover:underline hover:text-gray-300 transition-all duration-200">Ticketing
+                        System</a></li>
+                <li class="mb-4"><a href="#"
+                        class="text-white text-nowrap text-sm hover:underline hover:text-gray-300 transition-all duration-200">Knowledge
+                        Base</a></li>
+                <li class="mb-4"><a href="#"
+                        class="text-white text-nowrap text-sm hover:underline hover:text-gray-300 transition-all duration-200">Community
+                        Forums</a></li>
+                <li class="mb-4"><a href="#"
+                        class="text-white text-nowrap text-sm hover:underline hover:text-gray-300 transition-all duration-200">Help
+                        Desk Software</a></li>
+            </ul>
+            <ul>
+                <li class="mb-4"><a href="#"
+                        class="text-white text-nowrap text-lg hover:underline hover:text-gray-300 transition-all duration-200">Resources</a>
+                </li>
+                <li class="mb-4"><a href="#"
+                        class="text-white text-nowrap text-sm hover:underline hover:text-gray-300 transition-all duration-200">Product
+                        Support</a></li>
+                <li class="mb-4"><a href="#"
+                        class="text-white text-nowrap text-sm hover:underline hover:text-gray-300 transition-all duration-200">Request
+                        Demo</a></li>
+                <li class="mb-4"><a href="#"
+                        class="text-white text-nowrap text-sm hover:underline hover:text-gray-300 transition-all duration-200">Library</a>
+                </li>
+                <li class="mb-4"><a href="#"
+                        class="text-white text-nowrap text-sm hover:underline hover:text-gray-300 transition-all duration-200">Peoplepower
+                        Blog</a></li>
+            </ul>
+            <ul>
+                <li class="mb-4"><a href="#"
+                        class="text-white text-nowrap text-lg hover:underline hover:text-gray-300 transition-all duration-200">Company</a>
+                </li>
+                <li class="mb-4"><a href="#"
+                        class="text-white text-nowrap text-sm hover:underline hover:text-gray-300 transition-all duration-200">About
+                        Us</a></li>
+                <li class="mb-4"><a href="#"
+                        class="text-white text-nowrap text-sm hover:underline hover:text-gray-300 transition-all duration-200">Press</a>
+                </li>
+                <li class="mb-4"><a href="#"
+                        class="text-white text-nowrap text-sm hover:underline hover:text-gray-300 transition-all duration-200">Investors</a>
+                </li>
+                <li class="mb-4"><a href="#"
+                        class="text-white text-nowrap text-sm hover:underline hover:text-gray-300 transition-all duration-200">Events</a>
+                </li>
+            </ul>
+            <ul>
+                <li class="mb-4"><a href="#"
+                        class="text-white text-nowrap text-lg hover:underline hover:text-gray-300 transition-all duration-200">Favourite
+                        Things</a></li>
+                <li class="mb-4"><a href="#"
+                        class="text-white text-nowrap text-sm hover:underline hover:text-gray-300 transition-all duration-200">For
+                        Enterprise</a></li>
+                <li class="mb-4"><a href="#"
+                        class="text-white text-nowrap text-sm hover:underline hover:text-gray-300 transition-all duration-200">For
+                        Startups</a></li>
+                <li class="mb-4"><a href="#"
+                        class="text-white text-nowrap text-sm hover:underline hover:text-gray-300 transition-all duration-200">For
+                        Benchmark</a></li>
+                <li class="mb-4"><a href="#"
+                        class="text-white text-nowrap text-sm hover:underline hover:text-gray-300 transition-all duration-200">For
+                        Small Business</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <h6 class="w-full bg-[#23262f] text-sm text-center p-2 text-white">© NameBrand 2022 - All Rights Reserved</h6>
+
+
     <script type="module" src="../../dist/scripts/projects.js"></script>
+    <script type="module" src="../../dist/scripts/menu.js"></script>
 
 </body>
 
