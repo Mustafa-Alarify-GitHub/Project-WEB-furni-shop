@@ -574,6 +574,11 @@ video {
   z-index: 10;
 }
 
+.mx-4 {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -612,12 +617,24 @@ video {
   height: 1.5rem;
 }
 
+.h-\[10px\] {
+  height: 10px;
+}
+
 .h-\[273px\] {
   height: 273px;
 }
 
 .h-\[350px\] {
   height: 350px;
+}
+
+.h-\[50px\] {
+  height: 50px;
+}
+
+.h-\[80px\] {
+  height: 80px;
 }
 
 .h-full {
@@ -645,6 +662,18 @@ video {
   width: 1.5rem;
 }
 
+.w-\[10px\] {
+  width: 10px;
+}
+
+.w-\[50px\] {
+  width: 50px;
+}
+
+.w-\[80px\] {
+  width: 80px;
+}
+
 .w-\[90\%\] {
   width: 90%;
 }
@@ -659,6 +688,11 @@ video {
 
 .translate-x-1\/2 {
   --tw-translate-x: 50%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.rotate-180 {
+  --tw-rotate: 180deg;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
@@ -702,6 +736,10 @@ video {
   justify-content: space-between;
 }
 
+.gap-1 {
+  gap: 0.25rem;
+}
+
 .gap-2 {
   gap: 0.5rem;
 }
@@ -722,14 +760,6 @@ video {
   gap: 64px;
 }
 
-.gap-8 {
-  gap: 2rem;
-}
-
-.gap-20 {
-  gap: 5rem;
-}
-
 .overflow-hidden {
   overflow: hidden;
 }
@@ -742,12 +772,29 @@ video {
   border-radius: 20px;
 }
 
+.rounded-full {
+  border-radius: 9999px;
+}
+
+.rounded-lg {
+  border-radius: 0.5rem;
+}
+
 .rounded-md {
   border-radius: 0.375rem;
 }
 
+.border {
+  border-width: 1px;
+}
+
 .border-r {
   border-right-width: 1px;
+}
+
+.border-black {
+  --tw-border-opacity: 1;
+  border-color: rgb(0 0 0 / var(--tw-border-opacity, 1));
 }
 
 .bg-\[\#286f6c\] {
@@ -757,6 +804,11 @@ video {
 
 .bg-\[\#E2E2E266\] {
   background-color: #E2E2E266;
+}
+
+.bg-black {
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity, 1));
 }
 
 .bg-\[url\(\'\.\.\/\.\.\/images\/modern-living-room-interior-2021-09-02-08-41-17-utc\@2x\.png\'\)\] {
@@ -800,6 +852,11 @@ video {
   padding-bottom: 1rem;
 }
 
+.py-6 {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
 .py-\[20px\] {
   padding-top: 20px;
   padding-bottom: 20px;
@@ -812,6 +869,10 @@ video {
 .text-4xl {
   font-size: 2.25rem;
   line-height: 2.5rem;
+}
+
+.text-\[10px\] {
+  font-size: 10px;
 }
 
 .text-\[14px\] {
@@ -863,6 +924,11 @@ video {
 .text-\[\#23262f\] {
   --tw-text-opacity: 1;
   color: rgb(35 38 47 / var(--tw-text-opacity, 1));
+}
+
+.text-\[\#919397\] {
+  --tw-text-opacity: 1;
+  color: rgb(145 147 151 / var(--tw-text-opacity, 1));
 }
 
 .text-gray-800 {
@@ -963,6 +1029,10 @@ video {
     width: 66.666667%;
   }
 
+  .tablet\:w-3\/5 {
+    width: 60%;
+  }
+
   .tablet\:grid-cols-4 {
     grid-template-columns: repeat(4, minmax(0, 1fr));
   }
@@ -983,6 +1053,14 @@ video {
     gap: 0px;
   }
 
+  .tablet\:gap-3 {
+    gap: 0.75rem;
+  }
+
+  .tablet\:gap-4 {
+    gap: 1rem;
+  }
+
   .tablet\:border-r {
     border-right-width: 1px;
   }
@@ -993,6 +1071,10 @@ video {
 
   .tablet\:p-20 {
     padding: 5rem;
+  }
+
+  .tablet\:text-\[14px\] {
+    font-size: 14px;
   }
 
   .tablet\:text-\[16px\] {
@@ -1029,6 +1111,10 @@ video {
 @media (min-width: 1024px) {
   .laptop\:w-1\/2 {
     width: 50%;
+  }
+
+  .laptop\:grid-cols-5 {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
   }
 
   .laptop\:px-\[100px\] {
