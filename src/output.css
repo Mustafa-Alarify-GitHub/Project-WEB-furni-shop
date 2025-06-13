@@ -564,29 +564,8 @@ video {
   margin-bottom: auto;
 }
 
-.mx-10 {
-  margin-left: 2.5rem;
-  margin-right: 2.5rem;
-}
-
-.-mt-\[50px\] {
-  margin-top: -50px;
-}
-
 .mt-10 {
   margin-top: 2.5rem;
-}
-
-.-mt-\[0px\] {
-  margin-top: -0px;
-}
-
-.-mt-\[200px\] {
-  margin-top: -200px;
-}
-
-.-mt-\[250px\] {
-  margin-top: -250px;
 }
 
 .flex {
@@ -605,12 +584,8 @@ video {
   height: 66.666667%;
 }
 
-.h-\[180px\] {
-  height: 180px;
-}
-
-.h-screen {
-  height: 100vh;
+.h-6 {
+  height: 1.5rem;
 }
 
 .h-\[273px\] {
@@ -622,8 +597,16 @@ video {
   height: min-content;
 }
 
+.h-screen {
+  height: 100vh;
+}
+
 .w-3\/4 {
   width: 75%;
+}
+
+.w-6 {
+  width: 1.5rem;
 }
 
 .w-\[90\%\] {
@@ -634,20 +617,20 @@ video {
   width: 100%;
 }
 
-.w-1\/2 {
-  width: 50%;
-}
-
 .grid-cols-2 {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
-.grid-rows-2 {
-  grid-template-rows: repeat(2, minmax(0, 1fr));
+.flex-row {
+  flex-direction: row;
 }
 
 .flex-col {
   flex-direction: column;
+}
+
+.flex-col-reverse {
+  flex-direction: column-reverse;
 }
 
 .items-center {
@@ -674,8 +657,12 @@ video {
   gap: 64px;
 }
 
-.gap-1 {
-  gap: 0.25rem;
+.gap-5 {
+  gap: 1.25rem;
+}
+
+.gap-4 {
+  gap: 1rem;
 }
 
 .rounded-\[10px\] {
@@ -684,14 +671,6 @@ video {
 
 .rounded-\[20px\] {
   border-radius: 20px;
-}
-
-.border {
-  border-width: 1px;
-}
-
-.border-l {
-  border-left-width: 1px;
 }
 
 .border-r {
@@ -707,17 +686,8 @@ video {
   background-color: #E2E2E266;
 }
 
-.bg-black {
-  --tw-bg-opacity: 1;
-  background-color: rgb(0 0 0 / var(--tw-bg-opacity, 1));
-}
-
 .bg-\[url\(\'\.\.\/\.\.\/images\/modern-living-room-interior-2021-09-02-08-41-17-utc\@2x\.png\'\)\] {
   background-image: url('../../images/modern-living-room-interior-2021-09-02-08-41-17-utc@2x.png');
-}
-
-.bg-gradient-to-b {
-  background-image: linear-gradient(to bottom, var(--tw-gradient-stops));
 }
 
 .bg-gradient-to-t {
@@ -730,16 +700,16 @@ video {
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
 }
 
-.to-black {
-  --tw-gradient-to: #000 var(--tw-gradient-to-position);
-}
-
 .to-\[\#22211e\] {
   --tw-gradient-to: #22211e var(--tw-gradient-to-position);
 }
 
 .bg-cover {
   background-size: cover;
+}
+
+.p-10 {
+  padding: 2.5rem;
 }
 
 .px-20 {
@@ -787,12 +757,9 @@ video {
   font-size: 24px;
 }
 
-.text-\[60px\] {
-  font-size: 60px;
-}
-
-.text-\[40px\] {
-  font-size: 40px;
+.text-base {
+  font-size: 1rem;
+  line-height: 1.5rem;
 }
 
 .font-bold {
@@ -807,13 +774,19 @@ video {
   line-height: 1.25;
 }
 
+.text-\[\#23262F\] {
+  --tw-text-opacity: 1;
+  color: rgb(35 38 47 / var(--tw-text-opacity, 1));
+}
+
+.text-\[\#23262f\] {
+  --tw-text-opacity: 1;
+  color: rgb(35 38 47 / var(--tw-text-opacity, 1));
+}
+
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity, 1));
-}
-
-.text-\[px\] {
-  color: px;
 }
 
 .backdrop-blur-\[30px\] {
@@ -870,12 +843,24 @@ video {
     height: 180px;
   }
 
+  .tablet\:w-1\/2 {
+    width: 50%;
+  }
+
   .tablet\:grid-cols-4 {
     grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 
-  .tablet\:grid-rows-4 {
-    grid-template-rows: repeat(4, minmax(0, 1fr));
+  .tablet\:flex-row {
+    flex-direction: row;
+  }
+
+  .tablet\:justify-between {
+    justify-content: space-between;
+  }
+
+  .tablet\:gap-0 {
+    gap: 0px;
   }
 
   .tablet\:border-r {
@@ -886,16 +871,34 @@ video {
     background-position: center;
   }
 
+  .tablet\:p-20 {
+    padding: 5rem;
+  }
+
+  .tablet\:text-\[14px\] {
+    font-size: 14px;
+  }
+
   .tablet\:text-\[20px\] {
     font-size: 20px;
+  }
+
+  .tablet\:text-\[40px\] {
+    font-size: 40px;
   }
 
   .tablet\:text-\[64px\] {
     font-size: 64px;
   }
 
-  .tablet\:text-\[40px\] {
-    font-size: 40px;
+  .tablet\:text-sm {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+
+  .tablet\:text-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
   }
 }
 
